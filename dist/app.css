@@ -1,5 +1,70 @@
-div {
-  width: 600px;
-  height: 600px;
-  background-color: red;
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.navBar {
+  width: 100%;
+  height: 95px;
+  background-color: black;
+}
+.navBar-topNavBar {
+  width: 100%;
+  height: 40px;
+}
+.navBar-topNavBar::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+.navBar-topNavBar ul {
+  list-style: none;
+  float: right;
+}
+.navBar-topNavBar ul li {
+  display: inline-block;
+  line-height: 40px;
+  font-size: 15px;
+  margin-right: 20px;
+  color: lightgray;
+}
+.navBar-topNavBar ul li:last-Child {
+  margin-right: 80px;
+}
+.navBar-topNavBar ul li span:first-child {
+  color: #009cff;
+}
+.navBar-bottomBar {
+  width: 100%;
+  height: 55px;
+}
+.navBar-bottomBar::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+.navBar-bottomBar-logo {
+  width: 15%;
+  height: 55px;
+  float: left;
+  text-align: center;
+}
+.navBar-bottomBar-logo div {
+  display: inline-block;
+  margin-top: calc((55px - 37px) / 2);
+}
+.navBar-bottomBar ul {
+  list-style: none;
+  float: left;
+  color: lightgray;
+}
+.navBar-bottomBar ul li {
+  display: inline-block;
+  line-height: 55px;
+  padding: 0 22px;
+}
+.navBar-bottomBar ul li:hover {
+  background-color: #ccc;
+  color: black;
 }
